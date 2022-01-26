@@ -1,0 +1,43 @@
+.feature {
+  display: flex;
+
+  &__rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+
+    background: $secondary-bg-color;
+    border-radius: 4px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.1;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-text-color;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+
+    letter-spacing: 0.03em;
+  }
+}
+
+.feature__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

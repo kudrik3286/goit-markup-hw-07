@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bg-hero;
+
+  &__container {
+    display: inline-flex;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: $primary-whit-color;
+  }
+}

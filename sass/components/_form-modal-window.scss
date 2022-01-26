@@ -1,0 +1,150 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+
+    margin-bottom: 12px;
+  }
+
+  &__grup {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__grup--coments {
+    margin-bottom: 20px;
+
+    width: 100%;
+    height: 138px;
+  }
+
+  &__grup + &__grup {
+    margin-top: 10px;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal-form__input {
+  display: block;
+  padding-left: 42px;
+
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color $timing $timing-function;
+
+  &:focus {
+    border-color: $accen-color;
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  transition: fill $timing $timing-function;
+
+  .modal-form__input:focus ~ & {
+    fill: $accen-color;
+  }
+}
+
+.modal-form__textarea {
+  padding: 12px;
+
+  width: 100%;
+  height: 120px;
+
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__label {
+    margin-right: 9px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $accen-color;
+  }
+}
+
+.checkbox__icon {
+  margin-right: 9px;
+
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: $primary-whit-color;
+  border: 1px solid $title-text-color;
+
+  transition-property: border-color, backgraund-image, background-color,
+    background-origin, background-size, background-repeat;
+  transition-duration: $timing;
+  transition-timing-function: $timing-function;
+
+  .checkbox__input:checked + & {
+    border-color: $accen-color;
+    background-color: $accen-color;
+    background-image: url(../img/icon-check1.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+}

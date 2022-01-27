@@ -73,6 +73,6 @@
   transition-timing-function: $timing-function;
 
   .modal__button-close:hover & {
-    fill: var(--accen-color);
+    fill: $accen-color;
   }
 }

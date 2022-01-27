@@ -161,7 +161,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__button-close:hover .modal__icon {
-  fill: var(--accen-color);
+  fill: #2196f3;
 }
 
 .modal-form {

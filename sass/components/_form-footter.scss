@@ -1,21 +1,46 @@
 .form-footer {
-  display: flex;
-  justify-content: center;
   padding-top: 12px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+  &__label {
+    display: inline-block;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   &__grup {
-    display: flex;
-    flex-direction: column;
+    display: block;
 
-    width: 358px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      width: max-content;
+    }
   }
 }
 
 .form-footer__input {
   padding: 15px 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-  width: 358px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   color: $primary-whit-color;
 
@@ -44,8 +69,9 @@
   text-align: start;
 
   padding: 10px 28px;
-  margin-left: 12px;
-  margin-top: 36px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 36px;
+  }
 }
 
 .form-fotter__icon {
